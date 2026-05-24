@@ -1,0 +1,39 @@
+Generics is used for type safety, We can apply generics in Class, Interface, Methods and constuctor.
+For example We have one list and we are trying to add values..
+Before java 1.5
+List list = new ArrayList();
+list.add(10);
+list.add("amit");
+
+While adding data it allows to add any data but while fetching the data JVM forces type cast the values it can be integer string or
+any other EX.(It can be in runtime).
+
+Integer i = (Integer)list.get(0); 
+String str = (String)list.get(1); 
+
+
+In java 1.5 generics intoduced to resolve that issue.
+
+List<Integer> list = new ArrayList<>();
+list.add(1);
+list.add("str"); It will give compile time error..
+
+
+https://engineeringdigest.medium.com/generics-b158a743d18f
+
+
+Generic types allow you to define a class, interface, or method with placeholders (type parameters) for the data types they will work with.
+This enables code reusability and type safety, as it allows you to create classes, interfaces, or methods that can operate on various 
+types without needing to rewrite the code for each type.
+
+A generic type is a class or interface that is parameterized over types. For example, a generic class can work with any type specified by
+the user, and that type can be enforced at compile time.
+
+
+T: Type
+E: Element (used in collections)
+K: Key (used in maps)
+V: Value (used in maps)
+N: Number
+
+
