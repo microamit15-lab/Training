@@ -1,6 +1,6 @@
 package basics.logic;
 
-public class StringPermutation {
+class StringPermutation {
 
 
 
